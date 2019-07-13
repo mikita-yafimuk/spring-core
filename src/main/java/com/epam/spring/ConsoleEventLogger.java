@@ -2,8 +2,8 @@ package com.epam.spring;
 
 public class ConsoleEventLogger implements EventLogger
 {
-	public void logEvent(String message)
+	public void logEvent(Event event)
 	{
-		System.out.println(message);
+		System.out.println(event.toString());
 	}
 }
