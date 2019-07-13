@@ -1,4 +1,4 @@
-package com.epam.spring;
+package com.epam.spring.models;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -53,6 +53,6 @@ public class Event
 				"id=" + id +
 				", message='" + message + '\'' +
 				", date=" + dateFormat.format(date) +
-				'}';
+				"}\n";
 	}
 }

@@ -1,4 +1,4 @@
-package com.epam.spring;
+package com.epam.spring.models;
 
 public class Client
 {

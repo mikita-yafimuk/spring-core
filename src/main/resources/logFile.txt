@@ -1,0 +1,10 @@
+Event{id=2256, message='First call of logEvent()', date=Jul 14, 2019 12:21:35 AM}
+Event{id=4237, message='Second call of logEvent()', date=Jul 14, 2019 12:21:35 AM}
+Event{id=5554, message='Third call of logEvent()', date=Jul 14, 2019 12:21:35 AM}
+Event{id=5843, message='Fourth call of logEvent()', date=Jul 14, 2019 12:21:35 AM}
+Event{id=9453, message='Fifth call of logEvent()', date=Jul 14, 2019 12:21:35 AM}
+Event{id=2668, message='First call of logEvent()', date=Jul 14, 2019 12:23:22 AM}
+Event{id=6484, message='Second call of logEvent()', date=Jul 14, 2019 12:23:22 AM}
+Event{id=3070, message='Third call of logEvent()', date=Jul 14, 2019 12:23:22 AM}
+Event{id=3858, message='Fourth call of logEvent()', date=Jul 14, 2019 12:23:22 AM}
+Event{id=911, message='Fifth call of logEvent()', date=Jul 14, 2019 12:23:22 AM}

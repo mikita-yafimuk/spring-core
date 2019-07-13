@@ -3,19 +3,28 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="eventLogger" class="com.epam.spring.ConsoleEventLogger"/>
+	<bean id="consoleEventLogger" class="com.epam.spring.loggers.ConsoleEventLogger"/>
 
-	<bean id="client" class="com.epam.spring.Client">
+	<bean id="fileEventLogger" class="com.epam.spring.loggers.FileEventLogger" init-method="init">
+		<constructor-arg value="logFile.txt"/>
+	</bean>
+
+	<bean id="cachedFileEventLogger" class="com.epam.spring.loggers.CachedFileEventLogger" init-method="init" destroy-method="flush">
+		<constructor-arg value="3"/>
+		<constructor-arg value="logFile.txt"/>
+	</bean>
+
+	<bean id="client" class="com.epam.spring.models.Client">
 		<constructor-arg value="1"/>
 		<constructor-arg value="Mikita Yafimuk"/>
 	</bean>
 
 	<bean id="app" class="com.epam.spring.App">
-		<constructor-arg ref="eventLogger"/>
+		<constructor-arg ref="cachedFileEventLogger"/>
 		<constructor-arg ref="client"/>
 	</bean>
 
-	<bean id="event" class="com.epam.spring.Event" scope="prototype">
+	<bean id="event" class="com.epam.spring.models.Event" scope="prototype">
 		<constructor-arg>
 			<bean class="java.util.Date"/>
 		</constructor-arg>
