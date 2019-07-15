@@ -38,7 +38,7 @@ public class CachedFileEventLogger extends FileEventLogger
 
 	public void flush()
 	{
-		LOGGER.debug("Flush the events to file and clear cache...");
+		LOGGER.debug("Flush cashed events to file and clear cache...");
 		if (!cache.isEmpty())
 		{
 			cache.forEach(super::logEvent);
