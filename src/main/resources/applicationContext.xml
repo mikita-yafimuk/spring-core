@@ -8,11 +8,7 @@
 	<bean id="client" class="com.epam.spring.models.Client">
 		<constructor-arg value="1"/>
 		<constructor-arg value="Mikita Yafimuk"/>
-	</bean>
-
-	<bean id="app" class="com.epam.spring.App">
-		<constructor-arg ref="cachedFileEventLogger"/>
-		<constructor-arg ref="client"/>
+		<property name="greeting" value="Hello there!"/>
 	</bean>
 
 	<bean id="event" class="com.epam.spring.models.Event" scope="prototype">
@@ -22,6 +18,17 @@
 		<constructor-arg>
 			<bean class="java.text.DateFormat" factory-method="getDateTimeInstance"/>
 		</constructor-arg>
+	</bean>
+
+	<bean id="app" class="com.epam.spring.App">
+		<constructor-arg ref="fileEventLogger"/>
+		<constructor-arg>
+			<map>
+				<entry key="INFO" value-ref="consoleEventLogger"/>
+				<entry key="ERROR" value-ref="combinedEventLogger"/>
+			</map>
+		</constructor-arg>
+		<constructor-arg ref="client"/>
 	</bean>
 
 </beans>

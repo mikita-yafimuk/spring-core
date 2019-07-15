@@ -14,4 +14,13 @@
 		<constructor-arg value="logFile.txt"/>
 	</bean>
 
+	<bean id="combinedEventLogger" class="com.epam.spring.loggers.CombinedEventLogger">
+		<constructor-arg>
+			<list>
+				<ref bean="consoleEventLogger"/>
+				<ref bean="fileEventLogger"/>
+			</list>
+		</constructor-arg>
+	</bean>
+
 </beans>
