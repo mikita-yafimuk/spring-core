@@ -24,6 +24,7 @@ public class App
 	public App(EventLogger defaultLogger, Client client, Map<EventType, EventLogger> loggers)
 	{
 		this.defaultLogger = defaultLogger;
+		LOGGER.debug("Default logger: " + defaultLogger.getClass().getName());
 		LOGGER.debug(client.getGreeting());
 		this.client = client;
 		this.loggers = loggers;

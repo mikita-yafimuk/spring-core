@@ -6,3 +6,11 @@ Event{id=7821, message='Second call of logEvent() with ERROR (console + file)', 
 Event{id=5875, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 7:48:27 PM}
 Event{id=3275, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 7:54:13 PM}
 Event{id=2461, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 7:54:13 PM}
+Event{id=5384, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 10:13:10 PM}
+Event{id=9111, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 10:13:10 PM}
+Event{id=408, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 10:14:42 PM}
+Event{id=9542, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 10:15:47 PM}
+Event{id=218, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 10:16:02 PM}
+Event{id=7699, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 10:16:47 PM}
+Event{id=133, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 10:16:47 PM}
+Event{id=8040, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 10:16:56 PM}

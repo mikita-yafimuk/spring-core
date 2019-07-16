@@ -22,7 +22,7 @@
 	</bean>
 
 	<bean id="app" class="com.epam.spring.App">
-		<constructor-arg ref="fileEventLogger"/>
+		<constructor-arg ref="#{T(com.epam.spring.models.Event).isDay() ? 'fileEventLogger' : 'consoleEventLogger'}"/>
 		<constructor-arg ref="loggersMap"/>
 		<constructor-arg ref="client"/>
 	</bean>

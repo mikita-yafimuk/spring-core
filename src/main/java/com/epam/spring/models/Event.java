@@ -1,10 +1,16 @@
 package com.epam.spring.models;
 
 import java.text.DateFormat;
+import java.time.LocalTime;
 import java.util.Date;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Event
 {
+	public static final Logger LOGGER = LogManager.getLogger();
+
 	private int id;
 	private String message;
 	private Date date;
@@ -54,5 +60,12 @@ public class Event
 				", message='" + message + '\'' +
 				", date=" + dateFormat.format(date) +
 				"}\n";
+	}
+
+	public static boolean isDay()
+	{
+		int hourOfDay = LocalTime.now().getHour();
+		LOGGER.debug("Hour of the day: " + hourOfDay);
+		return hourOfDay >= 8 && hourOfDay <= 17;
 	}
 }
