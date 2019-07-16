@@ -3,11 +3,16 @@ package com.epam.spring.loggers;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PreDestroy;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import com.epam.spring.models.Event;
 
+@Component
 public class CachedFileEventLogger extends FileEventLogger
 {
 	public static final Logger LOGGER = LogManager.getLogger();
@@ -15,7 +20,7 @@ public class CachedFileEventLogger extends FileEventLogger
 	private int cacheSize;
 	private List<Event> cache;
 
-	public CachedFileEventLogger(int cacheSize, String fileName)
+	public CachedFileEventLogger(@Value("${cacheSize}") int cacheSize, @Value("${loggingFileName}") String fileName)
 	{
 		super(fileName);
 		this.cacheSize = cacheSize;
@@ -36,6 +41,7 @@ public class CachedFileEventLogger extends FileEventLogger
 		}
 	}
 
+	@PreDestroy
 	public void flush()
 	{
 		LOGGER.debug("Flush cashed events to file and clear cache...");

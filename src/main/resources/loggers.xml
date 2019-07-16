@@ -5,29 +5,14 @@
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	   http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-	<bean id="consoleEventLogger" class="com.epam.spring.loggers.ConsoleEventLogger"/>
-
-	<bean id="fileEventLogger" class="com.epam.spring.loggers.FileEventLogger" init-method="init">
-		<constructor-arg value="logFile.txt"/>
-	</bean>
-
-	<bean id="cachedFileEventLogger" class="com.epam.spring.loggers.CachedFileEventLogger" init-method="init" destroy-method="flush">
-		<constructor-arg value="3"/>
-		<constructor-arg value="logFile.txt"/>
-	</bean>
-
-	<bean id="combinedEventLogger" class="com.epam.spring.loggers.CombinedEventLogger">
-		<constructor-arg>
-			<list>
-				<ref bean="consoleEventLogger"/>
-				<ref bean="fileEventLogger"/>
-			</list>
-		</constructor-arg>
-	</bean>
-
-	<util:map id="loggersMap">
-		<entry key="INFO" value-ref="consoleEventLogger"/>
+	<util:map id="loggersMap" key-type="com.epam.spring.models.EventType">
+		<entry key="INFO" value-ref="fileEventLogger"/>
 		<entry key="ERROR" value-ref="combinedEventLogger"/>
 	</util:map>
+
+	<util:list id="combinedLoggers">
+		<ref bean="consoleEventLogger"/>
+		<ref bean="cachedFileEventLogger"/>
+	</util:list>
 
 </beans>

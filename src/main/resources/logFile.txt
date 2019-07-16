@@ -1,8 +1,4 @@
-Event{id=1839, message='Second call of logEvent() with ERROR (console + file)', date=Jul 15, 2019, 4:43:45 PM}
-Event{id=8220, message='Third call of logEvent() with null (default - file)', date=Jul 15, 2019, 4:43:49 PM}
-Event{id=9126, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 7:48:04 PM}
-Event{id=7147, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 7:48:04 PM}
-Event{id=7821, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 7:48:27 PM}
-Event{id=5875, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 7:48:27 PM}
-Event{id=3275, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 7:54:13 PM}
-Event{id=2461, message='Third call of logEvent() with null (default - file)', date=Jul 16, 2019 7:54:13 PM}
+Event{id=1052, message='First call of logEvent() with INFO (file)', date=Jul 16, 2019 9:26:52 PM}
+Event{id=5719, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 9:26:52 PM}
+Event{id=2376, message='First call of logEvent() with INFO (file)', date=Jul 16, 2019 9:28:15 PM}
+Event{id=7710, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 9:28:15 PM}

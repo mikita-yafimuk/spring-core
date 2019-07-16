@@ -1,12 +1,17 @@
 package com.epam.spring.models;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Client
 {
 	private String id;
 	private String fullName;
+	@Value("${greeting}")
 	private String greeting;
 
-	public Client(String id, String fullName)
+	public Client(@Value("${id}") String id,@Value("${fullName}") String fullName)
 	{
 		this.id = id;
 		this.fullName = fullName;

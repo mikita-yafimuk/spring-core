@@ -5,14 +5,18 @@ import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
 
 import com.epam.spring.loggers.EventLogger;
 import com.epam.spring.models.Client;
 import com.epam.spring.models.Event;
 import com.epam.spring.models.EventType;
 
+@Component
 public class App
 {
 	private final static Logger LOGGER = LogManager.getLogger();
@@ -21,7 +25,8 @@ public class App
 	private Client client;
 	private Map<EventType, EventLogger> loggers;
 
-	public App(EventLogger defaultLogger, Client client, Map<EventType, EventLogger> loggers)
+	@Autowired
+	public App(@Qualifier("consoleEventLogger") EventLogger defaultLogger, Client client, @Qualifier("loggersMap") Map<EventType, EventLogger> loggers)
 	{
 		this.defaultLogger = defaultLogger;
 		LOGGER.debug(client.getGreeting());
@@ -46,9 +51,9 @@ public class App
 		ConfigurableApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 		App app = applicationContext.getBean(App.class);
 
-		app.logEvent("First call of logEvent() with INFO (console)", applicationContext.getBean(Event.class), EventType.INFO);
+		app.logEvent("First call of logEvent() with INFO (file)", applicationContext.getBean(Event.class), EventType.INFO);
 		app.logEvent("Second call of logEvent() with ERROR (console + file)", applicationContext.getBean(Event.class), EventType.ERROR);
-		app.logEvent("Third call of logEvent() with null (default - file)", applicationContext.getBean(Event.class), null);
+		app.logEvent("Third call of logEvent() with null (default - console)", applicationContext.getBean(Event.class), null);
 
 		applicationContext.close();
 	}

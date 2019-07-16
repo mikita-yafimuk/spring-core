@@ -3,12 +3,17 @@ package com.epam.spring.loggers;
 import java.io.File;
 import java.io.IOException;
 
+import javax.annotation.PostConstruct;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import com.epam.spring.models.Event;
 
+@Component
 public class FileEventLogger implements EventLogger
 {
 	public static final Logger LOGGER = LogManager.getLogger();
@@ -16,11 +21,12 @@ public class FileEventLogger implements EventLogger
 	private String fileName;
 	private File file;
 
-	public FileEventLogger(String fileName)
+	public FileEventLogger(@Value("${loggingFileName}") String fileName)
 	{
 		this.fileName = fileName;
 	}
 
+	@PostConstruct
 	public void init() throws IOException
 	{
 		this.file = new File("src/main/resources/" + fileName);
