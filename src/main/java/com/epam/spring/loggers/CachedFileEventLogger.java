@@ -31,11 +31,11 @@ public class CachedFileEventLogger extends FileEventLogger
 	public void logEvent(Event event)
 	{
 		cache.add(event);
-		LOGGER.debug(String.format("Added %s event to cache", cache.size()));
+		LOGGER.info(String.format("Added %s event to cache", cache.size()));
 
 		if (cache.size() == cacheSize)
 		{
-			LOGGER.debug("Writing event to file and clear cache...");
+			LOGGER.info("Writing event to file and clear cache...");
 			cache.forEach(super::logEvent);
 			cache.clear();
 		}
@@ -44,7 +44,7 @@ public class CachedFileEventLogger extends FileEventLogger
 	@PreDestroy
 	public void flush()
 	{
-		LOGGER.debug("Flush cashed events to file and clear cache...");
+		LOGGER.info("Flush cashed events to file and clear cache...");
 		if (!cache.isEmpty())
 		{
 			cache.forEach(super::logEvent);

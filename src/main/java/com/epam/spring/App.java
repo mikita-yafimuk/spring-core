@@ -29,7 +29,7 @@ public class App
 	public App(@Qualifier("consoleEventLogger") EventLogger defaultLogger, Client client, @Qualifier("loggersMap") Map<EventType, EventLogger> loggers)
 	{
 		this.defaultLogger = defaultLogger;
-		LOGGER.debug(client.getGreeting());
+		LOGGER.info(client.getGreeting());
 		this.client = client;
 		this.loggers = loggers;
 	}

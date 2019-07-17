@@ -14,6 +14,6 @@ public class ConsoleEventLogger implements EventLogger
 	@Override
 	public void logEvent(Event event)
 	{
-		LOGGER.debug(event.toString());
+		LOGGER.info(event.toString());
 	}
 }

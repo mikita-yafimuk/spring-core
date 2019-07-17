@@ -2,3 +2,86 @@ Event{id=1052, message='First call of logEvent() with INFO (file)', date=Jul 16,
 Event{id=5719, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 9:26:52 PM}
 Event{id=2376, message='First call of logEvent() with INFO (file)', date=Jul 16, 2019 9:28:15 PM}
 Event{id=7710, message='Second call of logEvent() with ERROR (console + file)', date=Jul 16, 2019 9:28:15 PM}
+Event{id=6985, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:24:42 PM}
+Event{id=4329, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:24:42 PM}
+Event{id=3973, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:26:11 PM}
+Event{id=938, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:26:12 PM}
+Event{id=3512, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:31:44 PM}
+Event{id=7691, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:31:44 PM}
+Event{id=1300, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:32:43 PM}
+Event{id=6813, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:32:43 PM}
+Event{id=9780, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:33:00 PM}
+Event{id=1874, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:33:00 PM}
+Event{id=1546, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:33:21 PM}
+Event{id=2136, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:33:21 PM}
+Event{id=5368, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:37:58 PM}
+Event{id=2267, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:37:58 PM}
+Event{id=51, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:38:26 PM}
+Event{id=8772, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:38:26 PM}
+Event{id=8992, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:39:10 PM}
+Event{id=5411, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:39:10 PM}
+Event{id=1348, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:39:24 PM}
+Event{id=7907, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:39:24 PM}
+Event{id=5074, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:39:40 PM}
+Event{id=6792, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:39:40 PM}
+Event{id=4537, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:39:57 PM}
+Event{id=1894, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:39:57 PM}
+Event{id=3129, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:40:15 PM}
+Event{id=4944, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:40:15 PM}
+Event{id=807, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:42:21 PM}
+Event{id=3254, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:42:21 PM}
+Event{id=1656, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:43:18 PM}
+Event{id=124, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:43:19 PM}
+Event{id=9467, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:48:34 PM}
+Event{id=2455, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:48:34 PM}
+Event{id=2901, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 10:51:24 PM}
+Event{id=6092, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 10:51:24 PM}
+Event{id=8267, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:00:21 PM}
+Event{id=1383, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:00:21 PM}
+Event{id=4787, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:01:17 PM}
+Event{id=4223, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:01:18 PM}
+Event{id=8667, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:10:07 PM}
+Event{id=9609, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:10:07 PM}
+Event{id=6970, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:10:50 PM}
+Event{id=4155, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:10:50 PM}
+Event{id=1778, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:11:23 PM}
+Event{id=7769, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:11:23 PM}
+Event{id=6103, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:11:56 PM}
+Event{id=9119, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:14:03 PM}
+Event{id=5019, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:15:35 PM}
+Event{id=9049, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:15:55 PM}
+Event{id=7644, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:16:31 PM}
+Event{id=7124, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:20:59 PM}
+Event{id=5079, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:20:59 PM}
+Event{id=3717, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:21:17 PM}
+Event{id=8363, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:21:17 PM}
+Event{id=8633, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:23:00 PM}
+Event{id=5900, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:23:00 PM}
+Event{id=4310, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:25:09 PM}
+Event{id=5961, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:25:09 PM}
+Event{id=5645, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:25:39 PM}
+Event{id=4470, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:25:39 PM}
+Event{id=249, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:27:10 PM}
+Event{id=9639, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:27:17 PM}
+Event{id=1510, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:28:00 PM}
+Event{id=1722, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:28:22 PM}
+Event{id=9029, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:28:22 PM}
+Event{id=2585, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:28:39 PM}
+Event{id=6113, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:28:39 PM}
+Event{id=2017, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:28:54 PM}
+Event{id=4007, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:28:54 PM}
+Event{id=6984, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:29:08 PM}
+Event{id=7214, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:29:09 PM}
+Event{id=5543, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:29:27 PM}
+Event{id=3954, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:29:52 PM}
+Event{id=6034, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:29:52 PM}
+Event{id=7802, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:30:17 PM}
+Event{id=9378, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:30:17 PM}
+Event{id=2991, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:31:48 PM}
+Event{id=3724, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:31:48 PM}
+Event{id=8046, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:32:34 PM}
+Event{id=6052, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:32:34 PM}
+Event{id=4903, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:32:44 PM}
+Event{id=4792, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:32:44 PM}
+Event{id=9609, message='First call of logEvent() with INFO (file)', date=Jul 17, 2019 11:36:40 PM}
+Event{id=3694, message='Second call of logEvent() with ERROR (console + file)', date=Jul 17, 2019 11:36:40 PM}
